@@ -1,0 +1,122 @@
+[b]This mod brings back the Cracked Crown item from the full version of Alchemist NPC.
+This mod does not require AlchemistNPC Lite but its a very nice mod and you should use it.[/b]
+
+The Cracked Crown is a pet item which has a very low chance (1 out of 33333 by default) of dropping from any enemys and NPC.
+The Cracked Crown summons, Snatcher, the cursed prince, Snatcher offers stats in turn for souls of the ememies you kill.
+
+[b]For the future, if I ever do this that would be cool:[/b]
+ - Cat Scratch animation for Very Soft Blanket
+ - Docter Fee (CalamityMod adds its own)
+ - Sunkrova ammo
+ - Autoinjector(s)
+ - Uganda boss and boss drops (this is a very large task)
+
+ [b]The mod currently adds:[/b]
+ -Cracked Crown
+ -Cracked Crown Skin
+ -Counter Matter
+ -World Warper and its Modified counterpart
+ -Simulation Control Unit
+ -Bustling Fungus (not from alchemistnpc)
+
+[h1]What does it do?[/h1]
+Souls are gained by killing enemies,
+The stats for each milestone are as follows:
+ 
+[b]Cracked Crown[/b]
+500 souls: Movement speed +25%
+1000 souls: Defence +10
+1500 souls: Damage Reduction +10%
+2500 souls: Minion and Sentry slots +1
+3500 souls: Damage +8% for all classes (Including modded)
+5000 souls: Crit Chance +5% for all classes
+6666 souls: Armour Penetration +20
+9999 souls: Life increased by 10%
+12500 souls: Reflect 1000% of damage taken back to attacker
+15000 souls: Snatcher attacks nearby enemies with Shadow Burst
+
+[b]Very Soft Blanket (Buffed, if the buff is disabled in the config this will be the same as Cracked Crown)[/b]
+500 souls: Movement Speed +30%
+1000 souls: Defence +15
+1500 souls: Damage Reduction +10%
+2500 souls: Minion and Sentry slots +2
+3500 souls: Damage +10% for all classes (Including modded)
+5000 souls: Crit Chance +10% for all classes
+6666 souls: Armour Penetration +20
+9999 souls: Life increased by 20%
+12500 souls: Reflect 1000% of damage taken back to attacker
+15000 souls: Slinky attacks nearby enemies with Shadow Burst (Scratch may be added soon!)
+
+[b]Difference:[/b]
+Movement Speed +5%
+Defence +5
+Minion and Sentry slots +1
+Damage +2%
+Crit Chance +5%
+Max Life +10%
+
+[b]Nerfed Stats:[/b]
+Movement Speed: +15%
+Defence: +5
+Damage Reduction +5%
+Minion and Sentry Slots: +1
+Damage: +5%
+Crit Chance: +5%
+Penetration: +10
+Max Life: +5%
+
+
+[b]Changelog[/b]
+
+v0.2.5
+-Changed the drop conditions, no longer can drop from statues and some others
+-Small localization changes
+-Added headers to config + a new way to stop people from changing configs on servers
+
+v0.2.4
+-Ported to 1.4.4
+-Fixed Shadow Burst hitting targets multiple times and doing crazy broken amounts of damage.
+-Stopped Shadow Burst from activating if the held item doesn't do any damage.
+
+Version 0.2.3
+-Fixed shops having blank spaces due to the mod.
+
+Version 0.2.2
+-Changed the way config works, you can now change some configs that previously required a reload.
+
+Version 0.2.1
+-Added an option to disable Shadow Burst
+ The projectile is not supposed to hit multiple times, it is a bug.
+ Tbh I know nothing about proj code I didn't even write any of the proj stuff in this mod, I just ported it.
+
+Version 0.2 //big update?
+-Removed Admin Items
+-Changed version formatting
+-Added Simulation Control Unit (Sold by Merchant after any mech boss has been defeated)
+-Added World Warper (Sold by Merchant during Hardmode)
+-Added Modified World Warper (Sold by the Merchant after Moon Lord has been defeated)
+-Nerfed Cracked Crown option (No Precise Config)
+-Configuration for everything new
+-Fixed Description
+-Hopefully fixed workshop download failing to download the latest version (It doesn't like it if I skip versions I think)
+
+Version: 0.1.4
+-Added Sound Effects back into the mod
+-Added Counter Matter (I heard you, Demariosphere)
+-Reduced clutter on the TMod description and moved most info to the mods Workshop page
+
+Version: 0.1.3
+-Fixed Cracked Crown drop not showing in recipe browser
+-Changed the Cracked Crown Drop Chance config from a slider to a number input
+
+Version: 0.1.2
+-Added Stats to Description
+
+Version: 0.1.1
+-Fixed Bustling Fungus sprite being very large
+
+Version: 0.1
+-Added Configuration for almost everything (note: all config requires a reload)
+-Added Bustling Fungus
+-Added Cracked Crown Skin
+-Added Cracked Crown

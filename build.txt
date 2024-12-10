@@ -1,0 +1,3 @@
+displayName = Snatcher from AlchemistNPC (Cracked Crown)
+author = rice
+version = 0.2.5

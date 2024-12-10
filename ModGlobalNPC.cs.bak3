@@ -1,0 +1,96 @@
+﻿using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.Utilities;
+using AlchemistNPCItems.Content.Items.Pet;
+using AlchemistNPCItems.Content.Items.Equip;
+using AlchemistNPCItems.Content.Items.Weapons;
+using AlchemistNPCItems.Content.Items.Misc;
+using AlchemistNPCItems;
+using AlchemistNPCItems.Common.Configs;
+using Terraria.ModLoader.Config;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using IL.Terraria.GameContent.UI;
+
+namespace AlchemistNPCItems
+{
+	public class ModGlobalNPC : GlobalNPC
+	{
+		/*
+		// Cracked Crown
+		public override void ModifyGlobalLoot(GlobalLoot globalLoot)
+        {
+			var conf = ModContent.GetInstance<ItemConfig>();
+
+			if (conf.enableSnatcher == true) //Snatcher Drop
+				globalLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrackedCrown>(), conf.SnatcherDropChance)); 
+		}
+		*/
+		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
+        {
+			var conf = ModContent.GetInstance<ItemConfig>();
+			if (conf.enableBFungus == true) //BFungus Drop
+            {
+				if (npc.type == NPCID.ZombieMushroom || npc.type == NPCID.ZombieMushroomHat || npc.type == NPCID.AnomuraFungus || npc.type == NPCID.FungoFish || npc.type == NPCID.AnomuraFungus || npc.type == NPCID.FungiBulb || npc.type == NPCID.SporeBat || npc.type == NPCID.GiantFungiBulb || npc.type == NPCID.SporeSkeleton)
+					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<bustlingfungus>(), 3000)); 
+            }
+
+			if (conf.enableSnatcher == true) //Snatcher Drop
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrackedCrown>(), conf.SnatcherDropChance)); 
+
+			if (conf.enableCMatter == true) //Counter Matter & other legendary item Drop
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CounterMatter>(), conf.LegItemDrop));
+        }
+
+        //Override NPC Shops
+        public override void ModifyActiveShop(NPC npc, string shopName, Item[] items)
+        {
+            var conf = ModContent.GetInstance<ItemConfig>();
+            if (type == NPCID.Merchant)
+            {
+                if (Main.hardMode && conf.enableWW == true)
+                {
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<GlobalTeleporter>());
+                    shop.item[nextSlot].value = 333333;
+                    nextSlot++;
+                }
+
+                if (NPC.downedMoonlord == true && conf.enableWW == true)
+                {
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<GlobalTeleporterUp>());
+                    shop.item[nextSlot].value = 10000000;
+                    nextSlot++;
+                }
+
+                if (NPC.downedMechBossAny == true && conf.enableSCU)
+                {
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<WorldControlUnit>());
+                    shop.item[nextSlot].value = 1000000;
+                    nextSlot++;
+                }
+            }
+                /*
+                bool AlcheNPCLite = ModLoader.TryGetMod("AlchemistNPCLite", out Mod m);
+                if (AlcheNPCLite == true)
+                {
+                    Mod alchemod = ModLoader.GetMod("AlchemistNPCLite");
+                    if (type == alchemod.NPCType<Operator>() && Main.hardMode)
+                    {
+                        if (Shop2)
+                            shop.item[nextSlot].SetDefaults(ModContent.ItemType<GlobalTeleporter>(), false);
+                            shop.item[nextSlot].value = 333333;
+                            nextSlot++;
+                    }
+                }
+                if (AlcheNPCLite == false)
+                {
+                    if (type == NPCID.Merchant && Main.hardMode)
+                        shop.item[nextSlot].SetDefaults(ModContent.ItemType<GlobalTeleporter>(), false);
+                        shop.item[nextSlot].value = 50;
+                        nextSlot++;
+                } */
+        }
+    }
+}

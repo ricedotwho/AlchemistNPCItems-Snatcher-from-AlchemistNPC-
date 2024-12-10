@@ -1,0 +1,36 @@
+This mod brings back the Cracked Crown item from the full version of Alchemist NPC. (NOTE: MOST OF THE CODE IN THIS MOD IS NOT MINE, CREDIT TO THE ORIGINAL CREATOR OF ALCHEMISTNPC)
+This mod does not require AlchemistNPC Lite but its a very nice mod and you should use it.
+
+The Cracked Crown is a pet item which has a very low chance (1 out of 33333 by default) of dropping from any enemys and NPC.
+The Cracked Crown summons, Snatcher, the cursed prince, Snatcher offers stats in turn for souls of the ememies you kill.
+
+ The mod currently adds:
+ Cracked Crown
+ Counter Matter
+ Simultation Control Unit
+ World Warper and its modified counterpart
+ Bustling Fungus (not from alchemistnpc)
+
+
+Souls are gained by killing enemies,
+The stats for each milestone are as follows:
+
+500 souls: Movement speed +25%
+1000 souls: Defence +10
+1500 souls: Damage Reduction +10%
+2500 souls: Minion and Sentry slots +1
+3500 souls: Damage +8% for all classes (Including modded)
+5000 souls: Crit Chance +5% for all classes
+6666 souls: Armour Penetration +20
+9999 souls: Life increased by 10%
+12500 souls: Reflect 1000% of damage taken back to attacker
+15000 souls: Snatcher attacks nearby enemies with Shadow Burst
+
+
+Most recent Update:
+v0.2.5 (7/09/2023)
+-Changed the drop conditions, no longer can drop from statues and some others
+-Small localization changes
+-Added headers to config + a new way to stop people from changing configs on servers
+
+More info on the mods Workshop page!

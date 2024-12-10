@@ -1,0 +1,244 @@
+Buffs: {
+	GuarantCrit: {
+		DisplayName: Guaranteed Crit
+		Description: Your next attack will be critical hit
+	}
+
+	LongInvincible: {
+		DisplayName: Longer Invincibility
+		Description: Your invincibility time is increased
+	}
+
+	ProjCounter: {
+		DisplayName: Globe 199
+		Description:
+			'''
+			Destroys nearby hostile projectiles
+			Cooldown depends on progression
+			'''
+	}
+
+	Slinky: {
+		DisplayName: Slinky
+		Description: Snatcher reskin
+	}
+
+	Snatcher: {
+		DisplayName: Snatcher, the Cursed Prince
+		Description:
+			'''
+			Uh... You don't seem to have a soul. What a shame. OK then, let's make a deal...
+			In your journey, you are defeating an endless amounts of enemies...
+			But you are not collecting their souls for yourself, right?
+			Why not give them to me then? For certain amounts, I will give you some kind of rewards.
+			Does that sound good enough? I hope so...
+			'''
+	}
+
+	TankComb: {
+		DisplayName: Tank Combination (w/Modded)
+		Description: Combination of Swiftness, Endurance, Lifeforce, Ironskin, Obsidian Skin, Thorns, Regeneration, Titan Skin, Invincibility buffs
+	}
+
+	TitanSkin: {
+		DisplayName: Titan Skin
+		Description: You are immune to some annoying debuffs
+	}
+}
+
+Items: {
+	PinkGuyBody: {
+		DisplayName: Pink Guy's Suit [NYI]
+		Tooltip: Forged from the darkest of materials. Only the best of the best can wear it.
+	}
+
+	PinkGuyHead: {
+		DisplayName: Pink Guy's Hood [NYI]
+		Tooltip: Could this be a legendary piece of clothing? No one knows, but once you wear it, you can't go back.
+	}
+
+	PinkGuyLegs: {
+		DisplayName: Pink Guy's Leggings [NYI]
+		Tooltip: The perfect pants for leg day. Perhaps they could even make you stronger.
+	}
+
+	bustlingfungus: {
+		DisplayName: Bustling Fungus
+		Tooltip: Provides life regeneration while standing still
+	}
+
+	qualitysilk: {
+		DisplayName: Quality Silk
+		Tooltip: It's very soft
+	}
+
+	GlobalTeleporter: {
+		DisplayName: World Warper
+		Tooltip:
+			'''
+			Teleports you to any point of the map
+			Use right-click on full screen map to teleport
+			Will not work if any boss is alive
+			Breaks after use
+			''O, the azure justice, the crimson love,
+			In the name of the one buried in destiny,
+			I shall make an oath to the light,
+			that we will show those who
+			stand in front of us - the power of love!''
+			'''
+	}
+
+	GlobalTeleporterUp: {
+		DisplayName: Modified World Warper
+		Tooltip:
+			'''
+			Teleports you to any point of the map
+			Use right-click on full screen map to teleport
+			Will not work if any boss is alive
+			Breaks after use
+			''O, the azure justice, the crimson love,
+			In the name of the one buried in destiny,
+			I shall make an oath to the light,
+			that we will show those who
+			stand in front of us - the power of love!''
+			'''
+	}
+
+	WorldControlUnit: {
+		DisplayName: Simulation Control Unit
+		Tooltip:
+			'''
+			Exclusive product, designed by Angela
+			Left click to change between day and night time
+			Right click to enable or disable rain (sandstorm in desert)
+			'''
+	}
+
+	CrackedCrown: {
+		DisplayName: Cracked Crown
+		Tooltip: Summons the soul hunting entity
+	}
+
+	VerySoftBlanket: {
+		DisplayName: Very soft blanket
+		Tooltip: Summons Slinky
+	}
+
+	CounterMatter: {
+		DisplayName: Counter Matter
+		Tooltip:
+			'''
+			Globe 199
+			[c/00FF00:Legendary Item]
+			Destroys nearby enemy projectiles
+			After blocking the projectile, your next strike will be 100% critical
+			[c/00FF00:Stats are growing through progression]
+			'''
+	}
+}
+
+Projectiles: {
+	Counter.DisplayName: Counter
+	Globe199.DisplayName: Globe199
+	Returner2.DisplayName: Returner2
+	Sandrain.DisplayName: Sandrain
+	ShadowBurst.DisplayName: Shadow Burst
+	Slinky.DisplayName: Slinky
+	Snatcher.DisplayName: Snatcher
+}
+
+Configs: {
+	ItemConfig: {
+		DisplayName: Item Config
+
+		enableSnatcher: {
+			Label: Cracked Crown Enabled
+			Tooltip:
+				'''
+				Toggle whether the Cracked Crown will drop
+				Requires Reload
+				'''
+		}
+
+		SnatcherDropChance: {
+			Label: Cracked Crown Drop Chance
+			Tooltip:
+				'''
+				1 out of number
+				Requires Reload
+				'''
+		}
+
+		enableSlinky: {
+			Label: Very Soft Blanket Enabled
+			Tooltip:
+				'''
+				Toggle whether the Very Soft Blanket is craftable
+				This is a reskin for Cracked Crown
+				Requires Reload
+				'''
+		}
+
+		buffSlinky: {
+			Label: Very Soft Blanket Is Better Than Cracked Crown
+			Tooltip: Toggle whether the Very Soft Blanket is better than Cracked Crown
+		}
+
+		nerfCC: {
+			Label: Nerf Cracked Crown (Blanket will have the same stats)
+			Tooltip: Toggle whether the Cracked Crown becomes nerfed
+		}
+
+		enableBFungus: {
+			Label: Bustling Fungus Enabled
+			Tooltip:
+				'''
+				Toggle whether Bustling Fugus will drop
+				Requires Reload
+				'''
+		}
+
+		enableCMatter: {
+			Label: Counter Matter Enabled
+			Tooltip:
+				'''
+				Toggle whether Counter Matter will drop
+				Requires Reload
+				'''
+		}
+
+		enableWW: {
+			Label: World Warper Enabled
+			Tooltip: Toggle whether World Warper will appear in the shop
+		}
+
+		enableSCU: {
+			Label: Simulation Control Unit Enabled
+			Tooltip: Toggle whether Simulation Control Unit will appear in the shop
+		}
+
+		LegItemDrop: {
+			Label: Legendary Item Drop Chance
+			Tooltip:
+				'''
+				1 out of number
+				Requires Reload
+				'''
+		}
+
+		enableSSB: {
+			Label: Shadow Burst Toggle
+			Tooltip: No longer broken but this is still here...
+		}
+
+		cannotChangeConfigOnServer: {
+			Label: Stop clients from changing config on a server
+			Tooltip: Stop clients from changing config on a server.
+		}
+
+		Headers: {
+			Enable/Disable: Enable / Disable Features
+			DropChances: Drop Chances
+		}
+	}
+}
